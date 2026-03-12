@@ -334,9 +334,14 @@ section h2::after {
 /* Skills Section */
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     margin-bottom: 50px;
+}
+
+/* centre le 4ème bloc */
+.skills-grid .skill-category:nth-child(4) {
+    grid-column: 2;
 }
 
 .skill-category {
