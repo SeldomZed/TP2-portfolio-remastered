@@ -4,139 +4,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zeid IBRAHEEM - Portfolio</title>
+    <title>Zeid IBRAHEEM – Alternance Cybersécurité</title>
     <meta name="description"
-        content="Portfolio de Zeid IBRAHEEM - Étudiant en BUT Informatique, passionné par MODIFIER ICI">
+        content="Portfolio de Zeid IBRAHEEM – Étudiant BUT R&T, recherche alternance cybersécurité 2026–2028 dans le Grand Est">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Exo+2:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
 </head>
 
 <body>
-    <!-- Header Section -->
+    <!-- Background canvas for matrix effect -->
+    <canvas id="matrix-bg"></canvas>
+
+    <!-- Header -->
     <header class="header">
         <div class="container">
             <div class="profile-section">
                 <div class="profile-image">
+                    <div class="profile-ring"></div>
                     <img src="avatar.png" alt="Zeid IBRAHEEM">
+                    <div class="status-dot"></div>
                 </div>
                 <div class="profile-info">
-                    <h1>Zeid IBRAHEEM</h1>
-                    <p class="role">Étudiant en informatique, motivé et passionné par l'innovation technologique ET ICI !!!!!!</p>
+                    <div class="terminal-prefix"><span class="prompt">root@portfolio</span><span
+                            class="colon">:</span><span class="path">~</span><span class="dollar">$</span> <span
+                            class="cmd">whoami</span></div>
+                    <h1>Zeid <span class="accent">IBRAHEEM</span></h1>
+                    <p class="role"><span class="tag">&lt;</span> Étudiant BUT R&T · Futur alternant Cybersécurité <span
+                            class="tag">/&gt;</span></p>
+                    <div class="badges">
+                        <span class="badge">📍 Nancy, Grand Est</span>
+                        <span class="badge badge-green">🔐 Alternance 2026–2028</span>
+                        <span class="badge">🎓 IUT Nancy-Brabois</span>
+                    </div>
                 </div>
             </div>
-            <a href="#contact" class="show-contacts-btn">Voir Contacts</a>
+            <a href="#contact" class="cta-btn">
+                <span>Contactez-moi</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+            </a>
         </div>
     </header>
 
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar" id="navbar">
         <div class="container">
             <ul class="nav-links">
-                <li><a href="#about" class="active">À propos</a></li>
-                <li><a href="#experience">Expérience</a></li>
-                <li><a href="#competences">Compétences</a></li>
-                <li><a href="#formation">Formation</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about" class="nav-link active"><span class="nav-num">01.</span>Profil</a></li>
+                <li><a href="#competences" class="nav-link"><span class="nav-num">02.</span>Compétences</a></li>
+                <li><a href="#projets" class="nav-link"><span class="nav-num">03.</span>Projets</a></li>
+                <li><a href="#experience" class="nav-link"><span class="nav-num">04.</span>Expérience</a></li>
+                <li><a href="#formation" class="nav-link"><span class="nav-num">05.</span>Formation</a></li>
+                <li><a href="#contact" class="nav-link"><span class="nav-num">06.</span>Contact</a></li>
             </ul>
         </div>
     </nav>
 
     <!-- About Section -->
-    <section id="about" class="about-section">
+    <section id="about">
         <div class="container">
-            <h2>À propos de moi</h2>
-            <div class="about-content">
-                <p>Actuellement étudiant en première année de BUT Informatique, je suis à la recherche d'un contrat en
-                    alternance à partir de septembre 2025 dans le développement d'applications.</p>
-                <p>Passionné par la tech, je souhaite mettre mes compétences en pratique, à vos côtés. Dynamique et
-                    motivé, je suis prêt à m'investir pleinement et à progresser sur des projets concrets.</p>
-            </div>
-
-            <!-- Stats -->
-            <div class="stats-section">
-                <div class="stats-cards">
+            <h2 class="section-title"><span class="title-num">01.</span> Profil</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <div class="terminal-block">
+                        <div class="terminal-header">
+                            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                            <span class="terminal-title">zeid@nancy:~$ cat about.txt</span>
+                        </div>
+                        <div class="terminal-body">
+                            <p>Étudiant en <strong>1ère année de BUT Réseaux & Télécommunications</strong> à l'IUT
+                                Nancy-Brabois, je suis passionné par la <strong>cybersécurité</strong>, les systèmes
+                                Linux et l'analyse réseau.</p>
+                            <p>Fort d'un background en développement mobile (Flutter/Dart) et web, je combine une
+                                <strong>vision applicative</strong> avec des compétences réseau et sécurité en constante
+                                progression.
+                            </p>
+                            <p>Je recherche une <strong>alternance en cybersécurité</strong> (2026–2028) dans le Grand
+                                Est, idéalement dans un contexte SOC, pentest ou administration sécurisée.</p>
+                            <p class="terminal-cursor">Sérieux, curieux, autonome — prêt à apporter de la valeur sur des
+                                projets concrets.<span class="blink">_</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-stats">
                     <div class="stat-card">
-                        <h4>1+</h4>
-                        <p>ANNÉE D'ÉTUDES</p>
+                        <div class="stat-icon">🛡️</div>
+                        <h4 class="counter" data-target="2">0</h4>
+                        <p>ANS D'ALTERNANCE VISÉS</p>
                     </div>
                     <div class="stat-card">
-                        <h4>3+</h4>
-                        <p>PROJETS RÉALISÉS</p>
+                        <div class="stat-icon">🔧</div>
+                        <h4 class="counter" data-target="10">0</h4>
+                        <p>OUTILS CYBER MAÎTRISÉS</p>
                     </div>
                     <div class="stat-card">
-                        <h4>6+</h4>
-                        <p>TECHNOLOGIES MAÎTRISÉES</p>
+                        <div class="stat-icon">💻</div>
+                        <h4 class="counter" data-target="5">0</h4>
+                        <p>PROJETS TECHNIQUES</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">🌐</div>
+                        <h4 class="counter" data-target="3">0</h4>
+                        <p>LANGUES PARLÉES</p>
                     </div>
                 </div>
             </div>
 
-            <!-- Langues -->
+            <!-- Languages -->
             <div class="languages-section">
                 <h3>Langues</h3>
                 <div class="language-cards">
                     <div class="language-card">
                         <h4>Français</h4>
                         <p>Langue maternelle</p>
+                        <div class="lang-bar">
+                            <div class="lang-fill" style="width: 100%"></div>
+                        </div>
                     </div>
                     <div class="language-card">
                         <h4>Anglais</h4>
-                        <p>Niveau avancé</p>
+                        <p>Niveau avancé – C1</p>
+                        <div class="lang-bar">
+                            <div class="lang-fill" style="width: 87%"></div>
+                        </div>
                     </div>
                     <div class="language-card">
-                        <h4>Arabe</h4>
+                        <h4>Arabe levantin</h4>
                         <p>Courant à l'oral</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="experience-section">
-        <div class="container">
-            <h2>Expérience Professionnelle</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-date">Sept. 2024 - Juin 2025</div>
-                    <div class="timeline-content">
-                        <h3>Alternant Développeur d'Applications Mobiles</h3>
-                        <h4>Enodea - Nice</h4>
-                        <p>Développement d'applications mobiles en environnement professionnel.</p>
-                        <ul>
-                            <li>Technologies : Flutter, Android Studio, Dart</li>
-                            <li>Manipulation d'APIs via Postman</li>
-                            <li>Stockage et livraison, modification des statuts produits</li>
-                            <li>Design UI basé sur des références existantes</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-date">Jan. 2022 - Déc. 2023</div>
-                    <div class="timeline-content">
-                        <h3>Créateur de Sites Web</h3>
-                        <h4>Fiverr et Upwork - Remote</h4>
-                        <p>Proposition de services en création de sites web sur les plateformes Fiverr et Upwork.</p>
-                        <ul>
-                            <li>Développement de solutions web sur mesure</li>
-                            <li>Gestion de projets clients</li>
-                            <li>Technologies utilisées : HTML, CSS, JavaScript</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-date">Mai 2021</div>
-                    <div class="timeline-content">
-                        <h3>Assistant en Analyse de Données Immobilières</h3>
-                        <h4>Capital Real Estate Group - Remote/Miami</h4>
-                        <p>Analyse de données immobilières et collaboration avec courtier commercial.</p>
-                        <ul>
-                            <li>Analyse de données (Excel, Truthfinder)</li>
-                            <li>Mise à jour de base de données (+700 adresses)</li>
-                            <li>Collaboration avec Calum Winsor, courtier immobilier commercial</li>
-                        </ul>
+                        <div class="lang-bar">
+                            <div class="lang-fill" style="width: 70%"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -144,125 +144,469 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="competences" class="skills-section">
+    <section id="competences" class="dark-section">
         <div class="container">
-            <h2>Compétences Techniques</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <div class="skill-icon">💻</div>
-                    <h3>Langages de Programmation</h3>
-                    <ul>
-                        <li>Dart, Java</li>
-                        <li>JavaScript, HTML, CSS</li>
-                        <li>Python, SQL</li>
-                    </ul>
-                </div>
+            <h2 class="section-title"><span class="title-num">02.</span> Compétences Techniques</h2>
 
-                <div class="skill-category">
-                    <div class="skill-icon">🛠️</div>
-                    <h3>Frameworks & Outils</h3>
-                    <ul>
-                        <li>Flutter, Android Studio</li>
-                        <li>Git, GitHub, GitLab</li>
-                        <li>Postman</li>
-                    </ul>
-                </div>
-
-                <div class="skill-category">
-                    <div class="skill-icon">🗄️</div>
-                    <h3>Bases de Données</h3>
-                    <ul>
-                        <li>SQL, SQLite</li>
-                        <li>ObjectBox</li>
-                        <li>Architecture modulaire</li>
-                    </ul>
-                </div>
-
-                <div class="skill-category">
-                    <div class="skill-icon">🌐</div>
-                    <h3>Réseaux & Cybersécurité</h3>
-                    <ul>
-                        <li>Systèmes d'exploitation</li>
-                        <li>Services réseaux</li>
-                        <li>Architecture ordinateurs</li>
-                    </ul>
-                </div>
+            <div class="skills-tabs">
+                <button class="tab-btn active" data-tab="cyber">🔐 Cybersécurité</button>
+                <button class="tab-btn" data-tab="reseau">🌐 Réseaux & Systèmes</button>
+                <button class="tab-btn" data-tab="scripting">⚡ Scripting & Dev</button>
+                <button class="tab-btn" data-tab="outils">🛠️ Outils</button>
             </div>
 
-            <!-- Soft Skills -->
-            <div class="soft-skills">
-                <h3>Qualités Humaines</h3>
-                <div class="soft-skills-grid">
-                    <div class="soft-skill">
-                        <span class="skill-emoji">💪</span>
-                        <span>Persévérance</span>
+            <div class="tab-content active" id="tab-cyber">
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-name">Wireshark</span>
+                            <span class="skill-level level-intermediate">Intermédiaire</span>
+                        </div>
+                        <p class="skill-desc">Capture et analyse de trames réseau, filtres BPF/affichage, dissection de
+                            protocoles (TCP/UDP/HTTP/DNS/ARP), détection d'anomalies et reconstruction de sessions.</p>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="--w: 70%"></div>
+                        </div>
                     </div>
-                    <div class="soft-skill">
-                        <span class="skill-emoji">🔥</span>
-                        <span>Passionné</span>
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-name">Nmap</span>
+                            <span class="skill-level level-intermediate">Intermédiaire</span>
+                        </div>
+                        <p class="skill-desc">Scan de ports TCP/UDP, détection d'OS (OS fingerprinting), énumération de
+                            services, scripts NSE basiques (vulnérabilités, bannières), analyse de topologies réseau.
+                        </p>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="--w: 65%"></div>
+                        </div>
                     </div>
-                    <div class="soft-skill">
-                        <span class="skill-emoji">👥</span>
-                        <span>Leadership</span>
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-name">Metasploit Framework</span>
+                            <span class="skill-level level-notions">Notions</span>
+                        </div>
+                        <p class="skill-desc">Utilisation en environnement lab (VMs isolées) : recherche de modules,
+                            exploitation de vulnérabilités connues (CVE), meterpreter basique, approche CTF.</p>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="--w: 35%"></div>
+                        </div>
                     </div>
-                    <div class="soft-skill">
-                        <span class="skill-emoji">🤝</span>
-                        <span>Esprit d'équipe</span>
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-name">OWASP Top 10</span>
+                            <span class="skill-level level-notions">Notions</span>
+                        </div>
+                        <p class="skill-desc">Compréhension des 10 vulnérabilités web critiques : SQL Injection, XSS,
+                            IDOR, mauvaises configurations de sécurité, exposition de données sensibles, etc.</p>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="--w: 40%"></div>
+                        </div>
                     </div>
-                </div>
-            </div>
-
-            <div class="interests">
-                <h3>Centres d'Intérêts</h3>
-                <div class="soft-skills-grid">
-                    <div class="soft-skill">
-                        <span class="skill-emoji">🏊‍♂️</span>
-                        <span>Natation & Musculation</span>
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-name">Kali Linux / Outils offensifs</span>
+                            <span class="skill-level level-notions">Notions</span>
+                        </div>
+                        <p class="skill-desc">Utilisation de Kali Linux sur VirtualBox, familiarisation avec
+                            l'écosystème (Burp Suite, Nikto, Hydra, John the Ripper) dans le cadre de CTF et labs
+                            personnels.</p>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="--w: 38%"></div>
+                        </div>
                     </div>
-                    <div class="soft-skill">
-                        <span class="skill-emoji">🧠</span>
-                        <span>Biohacking & Alimentation</span>
-                    </div>
-                    <div class="soft-skill">
-                        <span class="skill-emoji">💻</span>
-                        <span>Technologies & Jeux vidéo</span>
-                    </div>
-                    <div class="soft-skill">
-                        <span class="skill-emoji">🌿</span>
-                        <span>Nature & Animaux</span>
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-name">CTF / TryHackMe / Root-Me</span>
+                            <span class="skill-level level-notions">Pratique</span>
+                        </div>
+                        <p class="skill-desc">Participation régulière à des challenges : web exploitation, forensics,
+                            cryptographie basique, network analysis. Apprentissage par la pratique en environnements
+                            contrôlés.</p>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="--w: 45%"></div>
+                        </div>
                     </div>
                 </div>
             </div>
 
+            <div class="tab-content" id="tab-reseau">
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-name">Linux (Debian / Ubuntu / Kali)</span>
+                            <span class="skill-level level-intermediate">Intermédiaire</span>
+                        </div>
+                        <p class="skill-desc">Administration système : gestion des utilisateurs et permissions
+                            (chmod/chown), services (systemd), cron jobs, firewall (iptables/ufw), résolution de
+                            problèmes en CLI.</p>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="--w: 68%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-name">Cisco Packet Tracer</span>
+                            <span class="skill-level level-intermediate">Intermédiaire</span>
+                        </div>
+                        <p class="skill-desc">Configuration de routeurs et switchs, protocoles de routage (OSPF, RIP),
+                            VLANs, ACL, DHCP/DNS en environnement simulé, topologies étoile/maillée.</p>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="--w: 65%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-name">Services Réseau</span>
+                            <span class="skill-level level-intermediate">Intermédiaire</span>
+                        </div>
+                        <p class="skill-desc">Maîtrise des protocoles fondamentaux : SSH (hardening, clés), DNS (zones,
+                            types d'enregistrements), DHCP, FTP/SFTP, HTTP/HTTPS, compréhension du modèle OSI/TCP-IP.
+                        </p>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="--w: 70%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-name">Virtualisation</span>
+                            <span class="skill-level level-intermediate">Intermédiaire</span>
+                        </div>
+                        <p class="skill-desc">Création et gestion de VMs sous VirtualBox, réseaux internes/NAT,
+                            snapshots, labs cybersécurité isolés (attaquant/victime), configuration multi-VM.</p>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="--w: 65%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+            <div class="tab-content" id="tab-scripting">
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-name">Python</span>
+                            <span class="skill-level level-intermediate">Intermédiaire</span>
+                        </div>
+                        <p class="skill-desc">Scripting réseau et sécurité : socket programming, requêtes HTTP
+                            (requests), parsing de données, automatisation de tâches, manipulation de fichiers, notions
+                            de Scapy.</p>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="--w: 65%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-name">Bash / Shell scripting</span>
+                            <span class="skill-level level-intermediate">Intermédiaire</span>
+                        </div>
+                        <p class="skill-desc">Automatisation de tâches Linux : scripts de surveillance réseau, cron
+                            jobs, gestion de logs, pipes et redirections, grep/awk/sed pour l'analyse de logs système.
+                        </p>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="--w: 60%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-name">Flutter / Dart</span>
+                            <span class="skill-level level-advanced">Avancé</span>
+                        </div>
+                        <p class="skill-desc">Développement mobile professionnel (Enodea) : application ERP Android/iOS,
+                            gestion de BDD locale ObjectBox, intégration d'APIs REST, architecture modulaire.</p>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="--w: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-name">JavaScript / HTML / CSS</span>
+                            <span class="skill-level level-intermediate">Intermédiaire</span>
+                        </div>
+                        <p class="skill-desc">Développement web front-end (Fiverr/Upwork) : sites vitrines sur mesure,
+                            manipulation du DOM, responsive design, interaction clients et livraison de solutions
+                            fonctionnelles.</p>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="--w: 72%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-name">SQL</span>
+                            <span class="skill-level level-intermediate">Intermédiaire</span>
+                        </div>
+                        <p class="skill-desc">Conception et interrogation de bases de données relationnelles, requêtes
+                            complexes (JOIN, sous-requêtes), optimisation de schémas, SQLite en contexte mobile.</p>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="--w: 60%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="tab-outils">
+                <div class="tools-grid">
+                    <div class="tool-item"><span class="tool-icon">📡</span><span>Wireshark</span></div>
+                    <div class="tool-item"><span class="tool-icon">🗺️</span><span>Nmap</span></div>
+                    <div class="tool-item"><span class="tool-icon">💻</span><span>VirtualBox</span></div>
+                    <div class="tool-item"><span class="tool-icon">🐧</span><span>Kali Linux</span></div>
+                    <div class="tool-item"><span class="tool-icon">🌐</span><span>Cisco Packet Tracer</span></div>
+                    <div class="tool-item"><span class="tool-icon">🔬</span><span>Postman</span></div>
+                    <div class="tool-item"><span class="tool-icon">🎯</span><span>Metasploit</span></div>
+                    <div class="tool-item"><span class="tool-icon">🕷️</span><span>Burp Suite</span></div>
+                    <div class="tool-item"><span class="tool-icon">📱</span><span>Android Studio</span></div>
+                    <div class="tool-item"><span class="tool-icon">🔑</span><span>SSH / OpenSSH</span></div>
+                    <div class="tool-item"><span class="tool-icon">🛡️</span><span>iptables / ufw</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projets">
+        <div class="container">
+            <h2 class="section-title"><span class="title-num">03.</span> Projets Techniques</h2>
+            <div class="projects-grid">
+
+                <div class="project-card featured">
+                    <div class="project-tag">🔐 Cybersécurité</div>
+                    <h3>Lab d'Analyse Réseau</h3>
+                    <p>Mise en place d'un environnement de lab virtualisé (VirtualBox) avec plusieurs VMs (Kali Linux,
+                        Debian, Windows). Capture et analyse de trafic avec Wireshark sur différents protocoles,
+                        identification de flux anormaux, reconstruction de sessions.</p>
+                    <div class="project-tech">
+                        <span>Wireshark</span>
+                        <span>Kali Linux</span>
+                        <span>VirtualBox</span>
+                        <span>tcpdump</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-tag">🌐 Réseaux</div>
+                    <h3>Infrastructure Réseau Simulée</h3>
+                    <p>Conception d'une topologie d'entreprise sur Cisco Packet Tracer : segmentation par VLANs, routage
+                        inter-VLAN, configuration OSPF, mise en place de services (DHCP, DNS), application d'ACL pour
+                        filtrage du trafic.</p>
+                    <div class="project-tech">
+                        <span>Cisco Packet Tracer</span>
+                        <span>OSPF</span>
+                        <span>VLAN</span>
+                        <span>ACL</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-tag">🐧 Linux & Scripting</div>
+                    <h3>Scripts de Surveillance Système</h3>
+                    <p>Développement de scripts Bash/Python pour l'automatisation : surveillance des connexions réseau
+                        actives (netstat/ss), analyse de logs système (/var/log), alertes sur comportements suspects,
+                        reporting automatique.</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>Bash</span>
+                        <span>Linux</span>
+                        <span>Cron</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-tag">📱 Dev Mobile – Pro</div>
+                    <h3>Application ERP Mobile (Enodea)</h3>
+                    <p>Développement professionnel d'une application Android/iOS de gestion ERP : gestion des stocks,
+                        livraisons, statuts produits, alertes. Intégration d'APIs REST avec Postman, BDD locale
+                        ObjectBox, maquettes UI respectées.</p>
+                    <div class="project-tech">
+                        <span>Flutter</span>
+                        <span>Dart</span>
+                        <span>ObjectBox</span>
+                        <span>REST API</span>
+                    </div>
+                    <div class="project-link">
+                        <span class="pro-badge">Expérience professionnelle</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-tag">🎯 CTF</div>
+                    <h3>Challenges CTF (TryHackMe / Root-Me)</h3>
+                    <p>Participation régulière à des challenges de cybersécurité : web exploitation (injection SQL, XSS,
+                        LFI), cryptographie basique, forensics réseau (pcap), privilege escalation Linux, reconnaissance
+                        et énumération.</p>
+                    <div class="project-tech">
+                        <span>TryHackMe</span>
+                        <span>Root-Me</span>
+                        <span>Nmap</span>
+                        <span>Metasploit</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-tag">🌍 Dev Web – Freelance</div>
+                    <h3>Sites Web sur Mesure (Fiverr/Upwork)</h3>
+                    <p>Création de sites vitrines et interfaces web pour clients internationaux via Fiverr et Upwork.
+                        Gestion autonome de projets : recueil des besoins, conception, livraison. Technologies :
+                        HTML/CSS, JavaScript.</p>
+                    <div class="project-tech">
+                        <span>HTML/CSS</span>
+                        <span>JavaScript</span>
+                        <span>Gestion client</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="dark-section">
+        <div class="container">
+            <h2 class="section-title"><span class="title-num">04.</span> Expérience Professionnelle</h2>
+            <div class="timeline">
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-date">Sept. 2024 – Mai 2025</div>
+                    <div class="timeline-content">
+                        <div class="tl-header">
+                            <h3>Alternant Développeur d'Applications Mobiles</h3>
+                            <h4><span class="company-tag">Enodea</span> — Nice</h4>
+                        </div>
+                        <ul>
+                            <li>Développement d'une application mobile <strong>Android/iOS</strong> de gestion de
+                                données ERP (stocks, livraisons, statuts produits, alertes)</li>
+                            <li>Manipulation d'<strong>APIs REST</strong> avec Postman, structuration d'une base de
+                                données locale (ObjectBox)</li>
+                            <li>Travail en équipe : respect des maquettes UI, <strong>architecture modulaire</strong>,
+                                bonnes pratiques Git/GitFlow</li>
+                            <li>Environnement : <strong>Flutter, Dart, Android Studio, ObjectBox, Git</strong></li>
+                        </ul>
+                        <div class="tl-tags"><span>Flutter</span><span>Dart</span><span>Git</span><span>REST
+                                API</span><span>Agile</span></div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-date">Jan. 2022 – Déc. 2023</div>
+                    <div class="timeline-content">
+                        <div class="tl-header">
+                            <h3>Développeur Web Freelance</h3>
+                            <h4><span class="company-tag">Fiverr & Upwork</span> — Remote</h4>
+                        </div>
+                        <ul>
+                            <li>Création de <strong>sites web sur mesure</strong> pour clients internationaux (pages
+                                vitrines, interfaces adaptées)</li>
+                            <li>Gestion autonome du cycle projet : <strong>recueil du besoin → conception →
+                                    livraison</strong></li>
+                            <li>Technologies : HTML, CSS, JavaScript — Relation client directe en anglais</li>
+                        </ul>
+                        <div class="tl-tags"><span>HTML/CSS</span><span>JavaScript</span><span>Client
+                                management</span><span>English</span></div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-date">Mai 2021</div>
+                    <div class="timeline-content">
+                        <div class="tl-header">
+                            <h3>Assistant Analyse de Données</h3>
+                            <h4><span class="company-tag">Capital Real Estate Group</span> — Remote / Miami</h4>
+                        </div>
+                        <ul>
+                            <li>Nettoyage, vérification et mise à jour d'une base de données immobilières de <strong>15
+                                    000 à 20 000 adresses</strong></li>
+                            <li>Structuration d'informations avec Excel et TruthFinder, en collaboration à distance avec
+                                un courtier commercial</li>
+                        </ul>
+                        <div class="tl-tags"><span>Excel</span><span>Data Analysis</span><span>Remote Work</span></div>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </section>
 
     <!-- Formation Section -->
-    <section id="formation" class="formation-section">
+    <section id="formation">
         <div class="container">
-            <h2>Formation</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-date">Sept. 2024 - Présent</div>
-                    <div class="timeline-content">
-                        <h3>BUT Informatique</h3>
-                        <h4>IUT de Nice</h4>
-                        <p>Formation en développement d'applications et technologies de l'information.</p>
-                        <ul>
-                            <li>Modules : Développement orienté objet (Java), IHM, SQL</li>
-                            <li>Qualité logicielle, gestion de projets, anglais pro</li>
-                            <li>Projet : Jeu vidéo multijoueur au tour par tour</li>
-                        </ul>
+            <h2 class="section-title"><span class="title-num">05.</span> Formation</h2>
+            <div class="formation-grid">
+
+                <div class="formation-card current">
+                    <div class="formation-year">2025 → 2028</div>
+                    <div class="current-badge">En cours ✦</div>
+                    <h3>BUT Réseaux & Télécommunications</h3>
+                    <h4>IUT Nancy-Brabois – Université de Lorraine</h4>
+                    <div class="formation-details">
+                        <p><strong>Modules Réseaux :</strong> Architecture TCP/IP, protocoles de routage, administration
+                            réseau, services DNS/DHCP/SSH</p>
+                        <p><strong>Modules Sécurité :</strong> Introduction à la cybersécurité, cryptographie, sécurité
+                            des réseaux, pare-feu</p>
+                        <p><strong>Modules Systèmes :</strong> Administration Linux, virtualisation, scripting Bash</p>
+                        <p><strong>Modules Dev :</strong> Python, SQL, développement d'applications</p>
+                    </div>
+                    <div class="formation-tags">
+                        <span>TCP/IP</span><span>Linux</span><span>Cybersécurité</span><span>Python</span><span>Réseaux</span>
                     </div>
                 </div>
 
-                <div class="timeline-item">
-                    <div class="timeline-date">Sept. 2023 - Juil. 2024</div>
-                    <div class="timeline-content">
-                        <h3>Baccalauréat Général</h3>
-                        <h4>Lycée Général - Nice</h4>
-                        <p>Spécialités : Mathématiques & NSI (Numérique et Sciences Informatiques)</p>
+                <div class="formation-card">
+                    <div class="formation-year">2024 – 2025</div>
+                    <h3>BUT Informatique</h3>
+                    <h4>IUT de Nice</h4>
+                    <div class="formation-details">
+                        <p>Bases en programmation (Java, POO), développement web, SQL, IHM, gestion de projets, qualité
+                            logicielle.</p>
+                        <p><em>Projet notable :</em> Jeu vidéo multijoueur au tour par tour (Java).</p>
+                    </div>
+                    <div class="formation-tags"><span>Java</span><span>POO</span><span>SQL</span><span>Web</span></div>
+                </div>
+
+                <div class="formation-card">
+                    <div class="formation-year">2023 – 2024</div>
+                    <h3>Baccalauréat Général</h3>
+                    <h4>Lycée Albert Calmette – Nice</h4>
+                    <div class="formation-details">
+                        <p>Spécialités : <strong>Mathématiques & NSI</strong> (Numérique et Sciences Informatiques).
+                            Bases algorithmiques, logique, structures de données.</p>
+                    </div>
+                    <div class="formation-tags"><span>Maths</span><span>NSI</span><span>Algorithmique</span></div>
+                </div>
+
+            </div>
+
+            <!-- Certifications / Veille -->
+            <div class="veille-section">
+                <h3>Veille & Autoformation</h3>
+                <div class="veille-grid">
+                    <div class="veille-item">
+                        <span class="veille-icon">🎯</span>
+                        <div>
+                            <strong>TryHackMe</strong>
+                            <p>Challenges CTF réguliers, parcours Pre-Security, Introduction to Cyber Security</p>
+                        </div>
+                    </div>
+                    <div class="veille-item">
+                        <span class="veille-icon">🏴</span>
+                        <div>
+                            <strong>Root-Me</strong>
+                            <p>Challenges web, réseau, forensics, cryptographie</p>
+                        </div>
+                    </div>
+                    <div class="veille-item">
+                        <span class="veille-icon">📰</span>
+                        <div>
+                            <strong>Veille Cyber</strong>
+                            <p>Suivi de l'actualité sécurité (CVE, ANSSI, Krebs on Security, The Hacker News)</p>
+                        </div>
+                    </div>
+                    <div class="veille-item">
+                        <span class="veille-icon">🔗</span>
+                        <div>
+                            <strong>Blockchain & Web3</strong>
+                            <p>Intérêt pour la sécurité des smart contracts, cryptographie appliquée</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -270,69 +614,94 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact-section">
+    <section id="contact" class="dark-section">
         <div class="container">
-            <h2>Me Contacter</h2>
-            <div class="contact-content">
+            <h2 class="section-title"><span class="title-num">06.</span> Contact</h2>
+            <div class="contact-wrapper">
                 <div class="contact-info">
-                    <div class="contact-item">
-                        <span class="contact-icon">📧</span>
-                        <div>
-                            <strong>Email</strong>
-                            <a href="mailto:zeidibraheem07@gmail.com">zeidibraheem07@gmail.com</a>
-                        </div>
+                    <div class="contact-intro">
+                        <p>Vous recrutez pour une alternance en cybersécurité dans le <strong>Grand Est</strong> ?
+                            Discutons-en.</p>
                     </div>
-                    <div class="contact-item">
-                        <span class="contact-icon">📱</span>
-                        <div>
-                            <strong>Téléphone</strong>
-                            <a href="tel:+33623377739">06 23 37 77 39</a>
+                    <div class="contact-items">
+                        <a href="mailto:zeidibraheem07@gmail.com" class="contact-item">
+                            <div class="contact-icon-wrap">📧</div>
+                            <div>
+                                <strong>Email</strong>
+                                <span>zeidibraheem07@gmail.com</span>
+                            </div>
+                        </a>
+                        <a href="tel:+33623377729" class="contact-item">
+                            <div class="contact-icon-wrap">📱</div>
+                            <div>
+                                <strong>Téléphone</strong>
+                                <span>06 23 37 77 29</span>
+                            </div>
+                        </a>
+                        <div class="contact-item">
+                            <div class="contact-icon-wrap">📍</div>
+                            <div>
+                                <strong>Localisation</strong>
+                                <span>Nancy, Grand Est – France</span>
+                            </div>
                         </div>
+                        <a href="https://www.linkedin.com/in/zeid-ibraheem/" target="_blank" class="contact-item">
+                            <div class="contact-icon-wrap">💼</div>
+                            <div>
+                                <strong>LinkedIn</strong>
+                                <span>linkedin.com/in/zeid-ibraheem</span>
+                            </div>
+                        </a>
                     </div>
-                    <div class="contact-item">
-                        <span class="contact-icon">📍</span>
-                        <div>
-                            <strong>Localisation</strong>
-                            <span>Nancy, France</span>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <span class="contact-icon">💼</span>
-                        <div>
-                            <strong>LinkedIn</strong>
-                            <a href="https://www.linkedin.com/in/zeid-ibraheem/" target="_blank">Profil LinkedIn</a>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <span class="contact-icon">👨‍💻</span>
-                        <div>
-                            <strong>GitHub</strong>
-                            <a href="https://github.com/SeldomZed" target="_blank">SeldomZed</a>
+                    <div class="ref-section">
+                        <h3>Références</h3>
+                        <div class="ref-cards">
+                            <div class="ref-card">
+                                <strong>Thomas VILLENA</strong>
+                                <p>CEO – Enodea (Maître d'alternance)</p>
+                                <a href="mailto:thomas.villena@enodea.com">thomas.villena@enodea.com</a>
+                            </div>
+                            <div class="ref-card">
+                                <strong>Magalie Thomassin</strong>
+                                <p>Enseignant-Chercheur, IUT Nancy-Brabois</p>
+                                <a
+                                    href="mailto:magalie.thomassin@univ-lorraine.fr">magalie.thomassin@univ-lorraine.fr</a>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="contact-form">
-                    <h3>Envoyez-moi un message</h3>
-                    <form id="contactForm">
+                <div class="contact-form-wrap">
+                    <h3>Envoyer un message</h3>
+                    <div id="contactForm">
                         <div class="form-group">
                             <label for="name">Nom complet</label>
-                            <input type="text" id="name" name="name" required>
+                            <input type="text" id="name" name="name" placeholder="Votre nom" required>
                         </div>
                         <div class="form-group">
                             <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
+                            <input type="email" id="email" name="email" placeholder="votre@email.com" required>
                         </div>
                         <div class="form-group">
                             <label for="subject">Sujet</label>
-                            <input type="text" id="subject" name="subject" required>
+                            <input type="text" id="subject" name="subject" placeholder="Proposition d'alternance"
+                                required>
                         </div>
                         <div class="form-group">
                             <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <textarea id="message" name="message" rows="5" placeholder="Décrivez votre opportunité..."
+                                required></textarea>
                         </div>
-                        <button type="submit" class="btn-primary">Envoyer le message</button>
-                    </form>
+                        <button type="button" class="btn-send" onclick="handleFormSubmit()">
+                            <span>Envoyer</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 2L11 13M22 2L15 22l-4-9-9-4 20-7z" />
+                            </svg>
+                        </button>
+                        <div id="form-success" class="form-success" style="display:none">
+                            <span>✅ Message envoyé avec succès !</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -341,13 +710,18 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Zeid IBRAHEEM</p>
+            <div class="footer-content">
+                <span class="footer-name">Zeid IBRAHEEM</span>
+                <span class="footer-sep">·</span>
+                <span class="footer-role">Alternance Cybersécurité 2026–2028</span>
+                <span class="footer-sep">·</span>
+                <span class="footer-copy">© 2025</span>
+            </div>
+            <div class="footer-ascii">[ Sécuriser · Analyser · Protéger ]</div>
         </div>
     </footer>
 
     <script src="script.js"></script>
 </body>
 
-
 </html>
-
