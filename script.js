@@ -155,8 +155,27 @@ function animateCounter(el, target) {
             current = target;
             clearInterval(interval);
         }
-        el.textContent = current + '+';
+        el.textContent = current;
     }, 50);
+}
+
+// ─── HAMBURGER MENU ───
+const navToggle = document.getElementById('navToggle');
+const navLinksMenu = document.getElementById('navLinks');
+
+if (navToggle && navLinksMenu) {
+    navToggle.addEventListener('click', () => {
+        navToggle.classList.toggle('open');
+        navLinksMenu.classList.toggle('open');
+    });
+
+    // Close menu on link click
+    navLinksMenu.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+            navToggle.classList.remove('open');
+            navLinksMenu.classList.remove('open');
+        });
+    });
 }
 
 // ─── FORM SUBMIT ───
